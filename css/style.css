@@ -34,7 +34,9 @@ footer{
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.19), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 .header_lang{
+	color: white;
 	text-align: left;
+	padding: 10px;
 }
 #blue_bg{
 	z-index: -1;
