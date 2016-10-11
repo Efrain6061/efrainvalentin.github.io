@@ -35,7 +35,8 @@ footer{
 }
 .header_lang a{
 	color:#bdbdbd ;
-	text-align: 10px;
+	text-align: left;
+	padding: 5px;
 	text-decoration:none;
 	transition: .2s ease-in-out
 }
