@@ -33,10 +33,13 @@ footer{
 	background-color: #3F51B5; /* Change top background color */
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.19), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
-.header_lang small a{
+.header_lang a{
 	color: white;
 	text-align: left;
 	padding: 10px;
+}
+small{
+	color: white;
 }
 #blue_bg{
 	z-index: -1;
