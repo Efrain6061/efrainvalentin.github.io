@@ -35,8 +35,7 @@ footer{
 }
 .header_lang a{
 	color:#bdbdbd ;
-	text-align: left;
-	padding: 10px;
+	text-align: 5px;
 	text-decoration:none;
 	transition: .2s ease-in-out
 }
@@ -44,6 +43,7 @@ footer{
 	color: #F50057;
 }
 small{
+	padding: 10px;
 	color: white;
 }
 #blue_bg{
