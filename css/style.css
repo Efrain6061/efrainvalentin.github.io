@@ -38,6 +38,9 @@ footer{
 	text-align: left;
 	padding: 10px;
 }
+.header_lang a:hover{
+	color: #F50057;
+}
 small{
 	color: white;
 }
