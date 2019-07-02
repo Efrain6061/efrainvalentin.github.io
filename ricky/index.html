@@ -71,7 +71,7 @@
             display: none;
         }}
 
-        .navbar { 
+        #navbar-div, .navbar { 
         background-color: #ffffff !important; 
         -webkit-transition:padding 0.2s ease;
         -moz-transition:padding 0.2s ease; 
@@ -80,8 +80,7 @@
         }
 
         .affix {
-        padding-top: 0.2em !important;
-        padding-bottom: 0.2em !important;
+        padding-top: 0.5em !important;
         -webkit-transition:padding 0.2s linear;
         -moz-transition:padding 0.2s linear;  
         -o-transition:padding 0.2s linear;         
@@ -308,7 +307,7 @@
 .media-flag.youtube:hover:before {
   color: #ff0000;
 }
-#agenda-2020 iframe {
+iframe#agenda-2020-live {
     max-width: 500px;
     max-height: 281.25px;
     width: 100%;
@@ -362,10 +361,21 @@
 }
 
 
+#noticias{
+    background-color: #007bac;
+    width: 100%;
+    color:#ffffff;
+    transition: all ease-in-out 0.3s;
+}
+ #noticias marquee {
+    vertical-align: sub;
+ }
+
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom shadow-sm py-3" data-toggle="affix">
+    <div class="fixed-top bg-light" id="navbar-div" data-toggle="affix">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm" id="menu">
         <a data-scroll class="navbar-brand" href="#inicio"><img class="py-2" src="images/nav.png" width="125px" height="auto" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -403,6 +413,12 @@
             </ul>
         </div>
     </nav>
+    <div class="py-1" id="noticias">
+            <marquee direction="right" speed="normal" behavior="loop" >
+                <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;#Agenda2020 Sintonízanos todos los miércoles de 7:00 a 8:00 PM en Facebook. 
+            </marquee>
+        </div>
+    </div>
     <!-- /.navbar -->
 
     <!-- Header (Inicio) -->
@@ -497,7 +513,7 @@
                 </div>
                 <hr class="mt-4 mb-4">
                 <div class="col-md-8 pb-5">
-                    <iframe id="agenda-2020" class="mx-auto my-5"  src="https://www.youtube.com/embed/Y6aC8er7cYM" allowscriptaccess="always" allow="autoplay"></iframe>
+                    <iframe id="agenda-2020-live" class="mx-auto my-5" allowscriptaccess="always" allow="autoplay" allowfullscreen frameborder="0"></iframe>
                 </div>
             </div>
         </div>
@@ -686,13 +702,14 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="js/modalvideo.js"></script>
     <script src="js/modalimage.js"></script>
+    <script src="js/youtube.js"></script>
     <script>
     feather.replace()
     </script>
@@ -706,10 +723,12 @@
     
     if (scrollElement.scrollTop() >= top){
         wrapper.height(height);
-        affixElement.addClass("affix");
+        affixElement.addClass("affix");  
+        $(".navbar").css("padding-bottom", "0.5em")      
     }
     else {
         affixElement.removeClass("affix");
+        $(".navbar").css("padding-bottom", "0")
         wrapper.height('auto');
     }
         
