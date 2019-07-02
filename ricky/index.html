@@ -315,8 +315,40 @@
     height: 100%;
 }
 
-#agenda-2020 div#divider:before {content:url("images/ppd.png"); display:inline-block; margin: auto; position:absolute; top:0px; right: 0px; width:2px; height:61px;}
+#agenda-2020 hr {
+    border-top: none !important;
+}
+#contacto hr {
+    border-top: none !important;
+}
 
+@media only screen and (min-width: 890px) {
+  /* For desktop: */
+  #agenda-2020 div#divider:before {content:url("images/ppd.png"); display:inline-block; margin: auto; position:absolute; top:0px; right: 0px; width:2px; height:61px;}
+  #contacto div#divider:before {content:url("images/ppd.png"); display:inline-block; margin: auto; position:absolute; top:0px; right: 0px; width:2px; height:61px;}
+  #agenda-2020 hr:before {
+    display: none;
+    border-top: none !important;
+}
+#contacto hr:before {
+    display: none;
+    border-top: none !important;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  /* For desktop: */
+  #agenda-2020 hr:before {
+    display: block;
+    content: url(images/ppd-horizontal.png);
+    
+}
+#contacto hr:before {
+    display: block;
+    content: url(images/ppd-horizontal.png);
+    height: auto;
+}
+}
 
 .info-contact {
     line-height: 2;
@@ -328,6 +360,8 @@
     object-position: center;
     font-family: 'object-fit: cover; object-position: center;';
 }
+
+
     </style>
 </head>
 <body>
@@ -462,6 +496,7 @@
                     <img class="mx-auto my-auto img-fluid py-5 px-5" src="images/agenda2020.png" alt="">
                     <p class="lead">Sinton&iacute;zanos los mi&eacute;rcoles de 7:00 a 8:00 PM.</p>
                 </div>
+                <hr class="mt-4 mb-4">
                 <div class="col-md-8 pb-5">
                     <iframe id="agenda-2020" class="mx-auto my-5"  src="https://www.youtube.com/embed/Y6aC8er7cYM" allowscriptaccess="always" allow="autoplay"></iframe>
                 </div>
@@ -549,11 +584,7 @@
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div id="spinner-img" class="d-flex align-items-center px-5 py-3">
-                            <strong>Loading...</strong>
-                            <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
-                        </div>        
+                        </button>     
                         <img class="img-fluid" src="" alt="" id="image">
                     </div>
                 </div>
@@ -565,12 +596,13 @@
         <h2 class="font-weight-light text-center">Contacto</h2>
         <div class="container">
             <div class="row my-5">
-                <div class="col-md-6 my-3">
+                <div class="col-md-6 my-3" id="divider">
                     <p class="info-contact mx-auto text-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;(787) 223-9947<br>
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;rickymendez2020@gmail.com<br>
                     <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;www.isabela2020.com<br>
                     <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;PO BOX 1667<br>Isabela, Puerto Rico 00662</p>
                 </div>
+                <hr class="mt-4 mb-4">
                 <div class="col-md-6 text-center">
                     <img class="my-3" src="images/nav.png" alt="Logo" width="250px" height="auto">
                     <p>&iexcl;HAZ TU DONATIVO!<BR>
