@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ricky Mendez Alcalde Isabela 2020</title>
 
@@ -184,7 +184,7 @@
         #quien-soy {
             background-image: url(images/quien-soy.jpg);
             background-size: cover;
-            background-position: center;
+            background-position: top;
         }
 
         #videoModal .modal-dialog {
@@ -208,6 +208,33 @@
         color:#fff;
         opacity:1;
         }
+
+        #galeriaModal .modal-dialog {
+        max-width: 80%;
+        width: 100%;
+        margin: 30px auto;
+        }
+
+        #galeriaModal .modal-body {
+        position:relative;
+        padding:0px;
+        }
+
+        #galeriaModal .close {
+        position:absolute;
+        right:-30px;
+        top:0;
+        z-index:999;
+        font-size:2rem;
+        font-weight: normal;
+        color:#fff;
+        opacity:1;
+        }
+
+        .galeria-a {
+        cursor: pointer;
+        }
+
         section#redes-sociales {
             min-height: 150px !important;
         }
@@ -287,8 +314,19 @@
     width: 100%;
     height: 100%;
 }
+
+#agenda-2020 div#divider:before {content:url("images/ppd.png"); display:inline-block; margin: auto; position:absolute; top:0px; right: 0px; width:2px; height:61px;}
+
+
 .info-contact {
     line-height: 2;
+}
+.post-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    font-family: 'object-fit: cover; object-position: center;';
 }
     </style>
 </head>
@@ -374,7 +412,7 @@
                     
                 </div>
                 <div class="col-md-6 col-sm-8">
-                    <div class="card text-white bg-danger my-auto mx-auto">
+                    <div class="card text-white bg-danger my-auto mx-auto d-none d-sm-block">
                         <div class="card-body">
                             <h3 class="card-title">Conóceme</h3>
                             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -420,8 +458,9 @@
             <h2 class="font-weight-light">#Agenda2020</h2>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" id="divider">
                     <img class="mx-auto my-auto img-fluid py-5 px-5" src="images/agenda2020.png" alt="">
+                    <p class="lead">Sinton&iacute;zanos los mi&eacute;rcoles de 7:00 a 8:00 PM.</p>
                 </div>
                 <div class="col-md-8 pb-5">
                     <iframe id="agenda-2020" class="mx-auto my-5"  src="https://www.youtube.com/embed/Y6aC8er7cYM" allowscriptaccess="always" allow="autoplay"></iframe>
@@ -435,11 +474,94 @@
             <h2 class="font-weight-light text-white">Galer&iacute;a de Im&aacute;genes</h2>
         <div class="container">
 
+            <br>
+
+            <div class="row text-center text-lg-left mt-2">
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-1.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-2.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-3.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-4.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-5.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-5.jpg" alt="">
+                    </a>
+                </div> 
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-6.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-6.jpg" alt="">
+                    </a>
+                </div> 
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-7.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-7.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-8.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-8.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-9.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-9.jpg" alt="">
+                    </a>
+                </div> 
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-10.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-10.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-11.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-11.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-12.jpg" data-target="#galeriaModal">
+                        <img class="img-fluid" src="images/img-12.jpg" alt="">
+                    </a>
+                </div>   
+            </div>
         </div>
     </section>
 
+    <!-- Galería Modal -->
+    <div class="modal fade" id="galeriaModal" tabindex="-1" role="dialog" aria-labelledby="galeriaModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div id="spinner-img" class="d-flex align-items-center px-5 py-3">
+                            <strong>Loading...</strong>
+                            <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+                        </div>        
+                        <img class="img-fluid" src="" alt="" id="image">
+                    </div>
+                </div>
+            </div>
+        </div> 
+
     <!-- Contacto -->
-    <section class="py-5">
+    <section class="py-5" id="contacto">
         <h2 class="font-weight-light text-center">Contacto</h2>
         <div class="container">
             <div class="row my-5">
@@ -489,6 +611,7 @@
                         <ul class="list-unstyled">
                             <li><a href="http://www.ceepur.org/">Comisi&oacute;n Estatal de Elecciones</a></li>
                             <li><a href="http://ww2.ceepur.org/es-pr/Paginas/Estatus-del-Elector.aspx">Estatus del Elector</a></li>
+                            <li><a href="https://www.ppdpr.net/">PPD PR</a></li>
                             <li><a href="#contacto">Contacto</a></li>
                         </ul>
                     </div>
@@ -538,6 +661,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="js/modalvideo.js"></script>
+    <script src="js/modalimage.js"></script>
     <script>
     feather.replace()
     </script>
