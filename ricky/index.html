@@ -1,431 +1,147 @@
+<!--
+author: Efrain J. Valentin Gonzalez
+author URL: http://efrainvalentin.github.io/
+Template: Ricky Méndez v1.0.1
+Copyright 2019 Efrain J. Valentin Gonzalez
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-pr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ricky Mendez Alcalde Isabela 2020</title>
 
-    <!--CSS Files-->
+    <!-- CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        /* CSS used here will be applied after bootstrap.css */
-        body {
-        -webkit-font-smoothing: antialiased; 
-        text-rendering: optimizeLegibility;
-        }
-        html,body {
-        height:100%;
-        padding-top:50px;
-        }
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
 
-        header {
-        position: relative;
-        background-color: #ffffff;
-        height: 100vh;
-        min-height: 75vh;
-        width: 100%;
-        overflow: hidden;
-        }
-        header video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: 1;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        }
+    <!-- Metadata -->
+    <meta name="msapplication-TileColor" content="#f30304">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#f30304">
 
-        header .container {
-        position: relative;
-        z-index: 3;
-        }
-
-        header .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: #ffff;
-        opacity: 0.7;
-        z-index: 2;
-        }
-
-        @media (pointer: coarse) and (hover: none) {
-        header {
-        background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        }
-        header video {
-            display: none;
-        }}
-
-        #navbar-div, .navbar { 
-        background-color: #ffffff !important; 
-        -webkit-transition:padding 0.2s ease;
-        -moz-transition:padding 0.2s ease; 
-        -o-transition:padding 0.2s ease;        
-        transition:padding 0.2s ease;  
-        }
-
-        .affix {
-        padding-top: 0.5em !important;
-        -webkit-transition:padding 0.2s linear;
-        -moz-transition:padding 0.2s linear;  
-        -o-transition:padding 0.2s linear;         
-        }
-
-        section {
-            min-height:calc(100% - 70px);
-        }
-
-        /* Change this breakpoint if you change the breakpoint of the navbar */
-
-        @media (min-width: 992px) {
-        .animate {
-            animation-duration: 0.3s;
-            -webkit-animation-duration: 0.3s;
-            animation-fill-mode: both;
-            -webkit-animation-fill-mode: both;
-        }
-        }
-
-        @keyframes slideIn {
-        0% {
-            transform: translateY(1rem);
-            opacity: 0;
-        }
-        100% {
-            transform:translateY(0rem);
-            opacity: 1;
-        }
-        0% {
-            transform: translateY(1rem);
-            opacity: 0;
-        }
-        }
-
-        @-webkit-keyframes slideIn {
-        0% {
-            -webkit-transform: transform;
-            -webkit-opacity: 0;
-        }
-        100% {
-            -webkit-transform: translateY(0);
-            -webkit-opacity: 1;
-        }
-        0% {
-            -webkit-transform: translateY(1rem);
-            -webkit-opacity: 0;
-        }
-        }
-
-        .slideIn {
-        -webkit-animation-name: slideIn;
-        animation-name: slideIn;
-        }
-
-        .bg-red {
-        background-color: #f30304 !important;
-        }
-
-        .bg-blue {
-        background-color: #2c368d !important;
-        }
-
-        .bg-red-accent {
-        background-color: #d61920 !important;
-        }
-
-        .text-white {
-        color: #ffffff;
-        }
-
-        .footer > p { margin: 0 0 20px; line-height: 1.7; }
-        .footer > p:last-child { margin: 0px; }
-        a { text-decoration: none !important; -webkit-transition: all 0.3s !important; -moz-transition: all 0.3s !important; transition: all 0.3s !important; }
-        .footer > a:focus, .footer > a:hover { text-decoration: none; color: #cbd3da; }
-        .footer > hr { border-top: 1px solid #ad171c; margin-bottom: 50px; margin-top: 50px; }
-
-
-        .footer { padding-top: 80px; color: #e6e6e6; font-weight: 400; font-size: 17px; line-height: 34px;}
-        .footer-line { border-color: #ad171c; }
-        .footer-widget { padding-bottom: 50px; }
-        .footer-title { font-size: 24px; font-weight: 600; margin-bottom: 20px; color: #fff; }
-        .footer-widget ul li a { text-transform: capitalize; font-size: 17px; color: #e6e6e6; display: block; font-weight: 600; }
-        .footer-widget ul li a:hover { color: #fff; }
-        .newsletter-form { padding-top: 15px; }
-        .newsletter-form .form-control { background-color: #ad171c; border-color: #ad171c; }
-        .newsletter-form .form-control:focus { color: #fff; }
-        .newsletter-form input::-webkit-input-placeholder { color: #fff !important; }
-        .newsletter-form input:focus::-webkit-input-placeholder { color: #fff !important; }
-
-        #header-logo{
-        max-width: 500px;
-        width: 100%;
-        height: auto;
-        }
-
-
-        .tiny-footer { font-size: 14px; padding: 14px 0px; font-weight: 600; background-color: transparent; border-top: 1px solid #ad171c; color: #e6e6e6; line-height: 1; }
-
-        #quien-soy {
-            background-image: url(images/quien-soy.jpg);
-            background-size: cover;
-            background-position: top;
-        }
-
-        #videoModal .modal-dialog {
-        max-width: 80%;
-        width: 100%;
-        margin: 30px auto;
-        }
-
-
-        #videoModal .modal-body {
-        position:relative;
-        padding:0px;
-        }
-        #videoModal .close {
-        position:absolute;
-        right:-30px;
-        top:0;
-        z-index:999;
-        font-size:2rem;
-        font-weight: normal;
-        color:#fff;
-        opacity:1;
-        }
-
-        #galeriaModal .modal-dialog {
-        max-width: 80%;
-        width: 100%;
-        margin: 30px auto;
-        }
-
-        #galeriaModal .modal-body {
-        position:relative;
-        padding:0px;
-        }
-
-        #galeriaModal .close {
-        position:absolute;
-        right:-30px;
-        top:0;
-        z-index:999;
-        font-size:2rem;
-        font-weight: normal;
-        color:#fff;
-        opacity:1;
-        }
-
-        .galeria-a {
-        cursor: pointer;
-        }
-
-        section#redes-sociales {
-            min-height: 150px !important;
-        }
-        .display {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin: 20px auto;
-  padding: 20px;
-}
-.display > *:not(:last-child) {
-  margin-right: 15px;
-}
-.display.display-full {
-  max-width: 1800px;
-  min-width: 350px;
-}
-.display.display-three-quarter {
-  max-width: 1350px;
-  min-width: 350px;
-}
-.display.display-half {
-  max-width: 900px;
-  min-width: 350px;
-}
-.display.display-one-quarter {
-  width: 350px;
-}
-
-.media-flag {
-  position: relative;
-  width: 30%;
-  max-width: 200px;
-  height: 80px;
-  background-color: white;
-  cursor: pointer;
-}
-.media-flag:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #182d28;
-  font-size: 2em;
-  font-family: 'FontAwesome';
-  transition: color .2s ease;
-}
-.media-flag.facebook:before {
-  content: '\f09a';
-}
-.media-flag.facebook:hover:before {
-  color: #4267b2;
-}
-.media-flag.twitter:before {
-  content: '\f099';
-}
-.media-flag.twitter:hover:before {
-  color: #4c76dc;
-}
-.media-flag.instagram:before {
-  content: '\f16d';
-}
-.media-flag.instagram:hover:before {
-  color: #e64980;
-}
-.media-flag.youtube:before {
-  content: '\f16a';
-}
-.media-flag.youtube:hover:before {
-  color: #ff0000;
-}
-iframe#agenda-2020-live {
-    max-width: 500px;
-    max-height: 281.25px;
-    width: 100%;
-    height: 100%;
-}
-
-#agenda-2020 hr {
-    border-top: none !important;
-}
-#contacto hr {
-    border-top: none !important;
-}
-
-@media only screen and (min-width: 890px) {
-  /* For desktop: */
-  #agenda-2020 div#divider:before {content:url("images/ppd.png"); display:inline-block; margin: auto; position:absolute; top:0px; right: 0px; width:2px; height:61px;}
-  #contacto div#divider:before {content:url("images/ppd.png"); display:inline-block; margin: auto; position:absolute; top:0px; right: 0px; width:2px; height:61px;}
-  #agenda-2020 hr:before {
-    display: none;
-    border-top: none !important;
-}
-#contacto hr:before {
-    display: none;
-    border-top: none !important;
-}
-}
-
-@media only screen and (max-width: 767px) {
-  /* For desktop: */
-  #agenda-2020 hr:before {
-    display: block;
-    content: url(images/ppd-horizontal.png);
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Página oficial de Miguel Ricky Méndez - Alcalde Isabela 2020">
+    <meta itemprop="description" content="Bienvenidos a la página oficial de Miguel Ricky Méndez - Alcalde Isabela 2020.">
+    <meta itemprop="image" content="http://isabela2020.com/images/logo.png">
     
-}
-#contacto hr:before {
-    display: block;
-    content: url(images/ppd-horizontal.png);
-    height: auto;
-}
-}
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@alejandroIsabela20">
+    <meta name="twitter:title" content="Página oficial de Miguel Ricky Méndez - Alcalde Isabela 2020">
+    <meta name="twitter:description" content="Bienvenidos a la página oficial de Miguel Ricky Méndez - Alcalde Isabela 2020.">
+    <meta name="twitter:creator" content="@rickymndez3">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="http://isabela2020.com/images/logo.png">
+    <meta name="twitter:image:alt" content="Logo de Miguel Ricky Méndez 2020">
+    
+    <!-- Open Graph data -->
+    <meta property="og:locale" content="es_PR" />
+    <meta property="og:title" content="Miguel Ricky Méndez 2020" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://isabela2020.com/" />
+    <meta property="og:image" content="http://isabela2020.com/images/logo.png" />
+    <meta property="og:image:alt" content="Logo de Miguel Ricky Méndez 2020" />
+    <meta property="og:description" content="Bienvenidos a la página oficial de Miguel Ricky Méndez - Alcalde Isabela 2020." />
+    <meta property="og:site_name" content="Página oficial de Miguel Ricky Méndez - Alcalde Isabela 2020" />
+    
+    <!-- HTML Meta Tags for FB -->
+    <meta property="fb:admins" content="638037711" />
+    <meta property="fb:pages" content="397447437669420">
+    
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="Bienvenidos a la página oficial de Miguel Ricky Méndez - Alcalde Isabela 2020.">
+    <meta name="keywords" content="Municipio, Isabela, Puerto Rico, gobierno, noticias, Municipio Autónomo, Miguel Ricky Méndez 2020, alcalde, elecciones, Municipio de Isabela, @alejandroIsabela2020, Alcaldía, Alcaldía de Isabela, Alcalde, 2020, cee, ceepur, alejandroIsabela2020.com, Gobierno de Puerto Rico, Estado Libre Asociado, Municipios, Municipios Autónomos">
+    <meta name="author" content="http://efrainvalentin.github.io">
 
-.info-contact {
-    line-height: 2;
-}
-.post-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-    font-family: 'object-fit: cover; object-position: center;';
-}
-
-
-#noticias{
-    background-color: #007bac;
-    width: 100%;
-    color:#ffffff;
-    transition: all ease-in-out 0.3s;
-    font-weight: bold;
-}
- #noticias marquee {
-    vertical-align: sub;
- }
-
-    </style>
 </head>
+
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="images/nav.png" alt="" />
+        <br>
+        <div class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <!-- /. Preloader -->
+
+    <!-- Navbar -->
     <div class="fixed-top bg-light" id="navbar-div" data-toggle="affix">
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm" id="menu">
-        <a data-scroll class="navbar-brand" href="#inicio"><img class="py-2" src="images/nav.png" width="125px" height="auto" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm" id="menu">
+            <a data-scroll class="navbar-brand" href="#inicio"><img class="py-2" src="images/nav.png" width="125px" height="auto" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a data-scroll class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#quien-soy">&iquest;Qui&eacute;n Soy?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#redes-sociales">Redes Sociales</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#agenda-2020">#Agenda2020</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a data-scroll class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quien-soy">&iquest;Qui&eacute;n Soy?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#redes-sociales">Redes Sociales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agenda-2020">#Agenda2020</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         #&Uacute;neteporIsabela
                     </a>
-                    <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Voluntario</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="mx-3 px-3 btn bg-red text-white" href="donar.html">Donar</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="py-1" id="noticias">
-            <marquee direction="left" speed="normal" behavior="loop" >
-                <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;#Agenda2020 Sintonízanos todos los miércoles de 7:00 a 8:00 PM en Facebook. 
+                        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#unete">Voluntario</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="mx-3 px-3 btn bg-red text-white" href="#contacto">Donar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Noticias -->
+        <div class="py-1" id="noticias">
+            <marquee direction="left" speed="normal" behavior="loop">
+                <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;#Agenda2020 Sintonízanos todos los miércoles de 7:00 a 8:00 PM en Facebook.
             </marquee>
         </div>
+        <!-- /. Noticias -->
     </div>
     <!-- /.navbar -->
 
     <!-- Header (Inicio) -->
     <header class="masthead" id="inicio">
         <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video preload="auto" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="videos/cover.mp4" type="video/mp4">
         </video>
         <div class="container h-100">
@@ -436,44 +152,84 @@ iframe#agenda-2020-live {
             </div>
         </div>
     </header>
-      
+    <!-- /. Header -->
+
     <!-- Bienvenida (Mensaje) -->
     <section class="py-5">
-    <div class="container">
+        <div class="container">
             <h2 class="font-weight-light">Miguel "Ricky" M&eacute;ndez P&eacute;rez</h2>
             <h5>Alcalde Isabela 2020. &iexcl;Por un Isabela a otro Nivel!</h5>
-        <div class="row mt-3">
-            <div class="col-md-6"><img class="mt-1" src="images/ricky.png" width="250px" height="auto" alt=""></div>
-            <div class="col-md-6">
-                <p class="mt-3 mb-2 lead">Amigo Isabelino:</p>
-                <p class="lead text-justify">Durante toda mi vida me he preparado para este momento. A través de los años he podido aportar al desarrollo de nuestro pueblo desde distintos escenarios. Cuento con tu confianza, dame la oportunidad de dirigir este movimiento que hoy se levanta y trabajar juntos por un Isabela a otro nivel.</p>
-                <br>
-                <h6>- Miguel "Ricky" M&eacute;ndez</h6>
+            <div class="row mt-3">
+                <div class="col-md-6"><img class="mt-1" src="images/ricky.png" width="250px" height="auto" alt=""></div>
+                <div class="col-md-6">
+                    <p class="mt-3 mb-2 lead">Amigo Isabelino:</p>
+                    <p class="lead text-justify">Durante toda mi vida me he preparado para este momento. A través de los años he podido aportar al desarrollo de nuestro pueblo desde distintos escenarios. Cuento con tu confianza, dame la oportunidad de dirigir este movimiento que
+                        hoy se levanta y trabajar juntos por un Isabela a otro nivel.</p>
+                    <br>
+                    <h6>- Miguel "Ricky" M&eacute;ndez</h6>
+                </div>
             </div>
         </div>
-    </div>
     </section>
+    <!-- /. Bienvenido -->
 
     <!-- Quien Soy -->
     <section class="py-5" id="quien-soy">
         <div class="container-fluid">
             <div class="row align-self-center">
-                <div class="col-md-6 col-sm-4 align-self-center">
-                    
+                <div class="col-md-6 col-sm-4 align-self-center d-none d-sm-block">
+
                 </div>
                 <div class="col-md-6 col-sm-8">
-                    <div class="card text-white bg-danger my-auto mx-auto d-none d-sm-block">
+                    <div class="card text-white bg-red-accent my-auto mx-auto">
                         <div class="card-body">
                             <h3 class="card-title">Conóceme</h3>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text">Te invito a que me conozcas. Durante toda mi vida me he preparado para este momento.</p>
                             <button type="button" class="btn text-white border-light video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/aUojJT6nit0" data-target="#videoModal">Ver video</button>
-                            <a href="" class="btn btn-light">M&aacute;s informaci&oacute;n</a>
+                            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#infoModal">M&aacute;s informaci&oacute;n</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- /. Quien Soy -->
+
+    <!-- Info Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-gray">Miguel Ricky M&eacute;ndez - Con&oacute;ceme</h5>
+                    <button type="button" class="close text-gray" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <img class="ricky-info my-3" src="images/ricky.png" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="font-weight-light mt-3 mb-2 text-uppercase text-gray"><span class="text-red">Logros</span> Educativos</h5>
+                            <p class="text-blue">&bull;&nbsp;Graduado con los más altos honores del sistema público de enseñanza <br>&bull;&nbsp;Líder Estudiantil en todos los niveles educativos <br>&bull;&nbsp;Bachillerato en Ingenieria civil del Colegio de Mayagüez (1999) / Minor en Ciencias Políticas</p>
+                            <div class="row">
+                                <div class="col-md-5 col-xl-4">
+                                    <h5 class="font-weight-light mt-3 mb-2 text-uppercase text-gray pr-2"><span class="text-red">Experiencia</span> Pol&iacute;tica</h5>
+                                    <p class="text-blue">&bull;&nbsp;Presidente de Barrio<br>&bull;&nbsp;Coordinador de Unidad Electoral<br>&bull;&nbsp;Instructor de Academia<br>&bull;&nbsp;Presidente de la Juventud Popular</p>
+                                </div>
+                                <div class="col-md-7 col-xl-8">
+                                    <h5 class="font-weight-light mt-3 mb-2 text-uppercase text-gray"><span class="text-red">Experiencia</span> Profesional</h5>
+                                    <p class="text-blue">&bull;&nbsp;Vice Presidente Legislatura Municipal (2000-2004)<br>&bull;&nbsp;Director Oficina Gerencia y Desarrollo de Proyectos (+ 11 años)<br>&bull;&nbsp;Miembro del Comité Evaluador de Propuestas del Municipio de Isabela<br>&bull;&nbsp;Miembro ex oficio de la Junta de Subastas del Municipio de Isabela</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Info Modal -->
 
     <!-- Video Modal -->
     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
@@ -482,15 +238,16 @@ iframe#agenda-2020-live {
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                     </button>        
+                     </button>
                     <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
-                </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
+    <!-- /. Video Modal -->
 
     <!-- Redes Sociales -->
     <section class="py-5 bg-red-accent text-center" id="redes-sociales">
@@ -502,10 +259,11 @@ iframe#agenda-2020-live {
             <div onclick="window.location.href = 'https://www.youtube.com/channel/UC66wWmyw9Hi-dQnN3sFyBIA';" class="media-flag youtube"></div>
         </div>
     </section>
+    <!-- /. Redes Sociales -->
 
     <!-- #Agenda2020 -->
     <section class="py-5 text-center" id="agenda-2020">
-            <h2 class="font-weight-light">#Agenda2020</h2>
+        <h2 class="font-weight-light">#Agenda2020</h2>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4" id="divider">
@@ -519,10 +277,11 @@ iframe#agenda-2020-live {
             </div>
         </div>
     </section>
+    <!-- /. #Agenda2020 -->
 
     <!-- Galeria -->
     <section class="py-5 text-center bg-red-accent">
-            <h2 class="font-weight-light text-white">Galer&iacute;a de Im&aacute;genes</h2>
+        <h2 class="font-weight-light text-white">Galer&iacute;a de Im&aacute;genes</h2>
         <div class="container">
 
             <br>
@@ -553,12 +312,12 @@ iframe#agenda-2020-live {
                     <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-5.jpg" data-target="#galeriaModal">
                         <img class="img-fluid" src="images/img-5.jpg" alt="">
                     </a>
-                </div> 
+                </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-6.jpg" data-target="#galeriaModal">
                         <img class="img-fluid" src="images/img-6.jpg" alt="">
                     </a>
-                </div> 
+                </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-7.jpg" data-target="#galeriaModal">
                         <img class="img-fluid" src="images/img-7.jpg" alt="">
@@ -573,7 +332,7 @@ iframe#agenda-2020-live {
                     <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-9.jpg" data-target="#galeriaModal">
                         <img class="img-fluid" src="images/img-9.jpg" alt="">
                     </a>
-                </div> 
+                </div>
                 <div class="col-lg-3 col-md-4 col-6">
                     <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-10.jpg" data-target="#galeriaModal">
                         <img class="img-fluid" src="images/img-10.jpg" alt="">
@@ -588,24 +347,26 @@ iframe#agenda-2020-live {
                     <a class="d-block mb-4 h-100 galeria-a" data-toggle="modal" data-src="images/img-12.jpg" data-target="#galeriaModal">
                         <img class="img-fluid" src="images/img-12.jpg" alt="">
                     </a>
-                </div>   
+                </div>
             </div>
         </div>
     </section>
+    <!-- /. Galería -->
 
     <!-- Galería Modal -->
     <div class="modal fade" id="galeriaModal" tabindex="-1" role="dialog" aria-labelledby="galeriaModal" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>     
-                        <img class="img-fluid" src="" alt="" id="image">
-                    </div>
+                        </button>
+                    <img class="img-fluid" src="" alt="" id="image">
                 </div>
             </div>
-        </div> 
+        </div>
+    </div>
+    <!-- /. Galería Modal -->
 
     <!-- Contacto -->
     <section class="py-5" id="contacto">
@@ -614,21 +375,24 @@ iframe#agenda-2020-live {
             <div class="row my-5">
                 <div class="col-md-6 my-3" id="divider">
                     <p class="info-contact mx-auto text-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;(787) 223-9947<br>
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;rickymendez2020@gmail.com<br>
-                    <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;www.isabela2020.com<br>
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;PO BOX 1667<br>Isabela, Puerto Rico 00662</p>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;rickymendez2020@gmail.com<br>
+                        <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;www.isabela2020.com<br>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;PO BOX 1667<br>Isabela, Puerto Rico 00662</p>
                 </div>
                 <hr class="mt-4 mb-4">
                 <div class="col-md-6 text-center">
                     <img class="my-3" src="images/nav.png" alt="Logo" width="250px" height="auto">
-                    <p>&iexcl;HAZ TU DONATIVO!<BR>
-                    PARA PODER LLEVAR EL MENSAJE<BR>
-                    COOPERATIVA DE AHORRO Y CR&Eacute;DITO DE ISABELA<BR>
-                    <strong>CUENTA: 0101-066402-4</strong></p>
+                    <p>&iexcl;HAZ TU DONATIVO!
+                        <BR> PARA PODER LLEVAR EL MENSAJE
+                        <BR> COOPERATIVA DE AHORRO Y CR&Eacute;DITO DE ISABELA
+                        <BR>
+                        <strong>CUENTA: 0101-066402-4</strong></p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- /. Contacto -->
+
     <!-- footer -->
     <div class="footer bg-red-accent">
         <div class="container">
@@ -679,7 +443,7 @@ iframe#agenda-2020-live {
                 <!-- /.footer-links -->
                 <!-- footer-links -->
                 <div class="col-xl-3 col-lg-3 col-md-12 col-sm-6 col-6 ">
-                    <div class="footer-widget ">
+                    <div class="footer-widget" id="unete">
                         <h3 class="footer-title">&Uacute;nete por Isabela</h3>
                         <form>
                             <div class="newsletter-form">
@@ -695,64 +459,34 @@ iframe#agenda-2020-live {
             <div class="row ">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center ">
                     <div class="tiny-footer">
-                        <p>Copyright © 2020 Miguel "Ricky" M&eacute;ndez P&eacute;rez. | Diseño y desarrollo por <a class="text-light" href="https://www.efrainvalentin.github.io" target="_blank" class="copyrightlink">Efra&iacute;n J. Valent&iacute;n Gonz&aacute;lez</a></p>
+                        <p>Copyright ©
+                            <script>
+                                var date = new Date(); var year = date.getFullYear(); document.write(year);
+                            </script> Miguel "Ricky" M&eacute;ndez P&eacute;rez. | Diseño y desarrollo por <a class="text-light" href="https://www.efrainvalentin.github.io" target="_blank" class="copyrightlink">Efra&iacute;n J. Valent&iacute;n Gonz&aacute;lez</a></p>
                     </div>
                 </div>
                 <!-- /. tiny-footer -->
             </div>
         </div>
     </div>
+    <!-- /. footer -->
 
+    <!-- Javascript Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/navbar.js"></script>
     <script src="js/modalvideo.js"></script>
     <script src="js/modalimage.js"></script>
     <script src="js/youtube.js"></script>
-    <script>
-    feather.replace()
-    </script>
-    <script>
-    $(document).ready(function() {
 
-    var toggleAffix = function(affixElement, scrollElement, wrapper) {
-
-    var height = affixElement.outerHeight(),
-        top = wrapper.offset().top;
-    
-    if (scrollElement.scrollTop() >= top){
-        wrapper.height(height);
-        affixElement.addClass("affix");  
-        $(".navbar").css("padding-bottom", "0.5em")      
-    }
-    else {
-        affixElement.removeClass("affix");
-        $(".navbar").css("padding-bottom", "0")
-        wrapper.height('auto');
-    }
-        
-    };
-
-
-    $('[data-toggle="affix"]').each(function() {
-    var ele = $(this),
-        wrapper = $('<div></div>');
-    
-    ele.before(wrapper);
-    $(window).on('scroll resize', function() {
-        toggleAffix(ele, $(this), wrapper);
-    });
-    
-    // init
-    toggleAffix(ele, $(window), wrapper);
-    });
-
-    });
-    </script>
+    <!-- Script for SmoothScroll -->
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+
 </body>
+
 </html>
