@@ -52,12 +52,38 @@ a {
     z-index: 1040;
 }
 #preloader img {
-    width: 200px;
+    width: 250px;
 }
-#preloader .spinner-border {
+#preloader .spinner {
     color: #f30304;
+    width: 60px;
+    height: 60px;
+    border-left: 3px solid #f30304;
+    border-right: 3px solid #f30304;
+    border-bottom: 3px solid #f30304;
+    border-top: 3px solid #ccc;
+    border-radius: 100%;
+    animation: rotation .6s infinite linear;
 }
 
+.spinner:after {
+    position: absolute;
+    content: url(../images/pava.svg);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    animation: rotation .6s infinite linear reverse; /* added this line */
+  }
+
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
+}
 /* Navbar */
 #navbar-div,
 .navbar {
@@ -413,24 +439,24 @@ iframe#agenda-2020-live {
 @media only screen and (min-width: 890px) {
     /* For desktop: */
     #agenda-2020 div#divider:before {
-        content: url("../images/ppd.png");
+        content: url("../images/divider-v.svg");
         display: inline-block;
         margin: auto;
         position: absolute;
         top: 0px;
         right: 0px;
-        width: 2px;
-        height: 61px;
+        width: 25px;
+        height: 300px;
     }
     #contacto div#divider:before {
-        content: url(../images/ppd.png);
+        content: url(../images/divider-v.svg);
         display: inline-block;
         margin: auto;
         position: absolute;
         top: 0px;
         right: 0px;
-        width: 2px;
-        height: 61px;
+        width: 25px;
+        height: 300px;
     }
     #agenda-2020 hr:before {
         display: none;
@@ -445,11 +471,15 @@ iframe#agenda-2020-live {
     /* For desktop: */
     #agenda-2020 hr:before {
         display: block;
-        content: url(../images/ppd-horizontal.png);
+        content: url(../images/divider-h.svg);
+        width: auto;
+        width: 300px;
+        height: 25px;
     }
     #contacto hr:before {
         display: block;
-        content: url(../images/ppd-horizontal.png);
-        height: auto;
+        content: url(../images/divider-h.svg);
+        width: 300px;
+        height: 25px;
     }
 }
