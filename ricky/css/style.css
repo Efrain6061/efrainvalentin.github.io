@@ -1,12 +1,10 @@
 /*! Ricky Mendez style.css v1.0.1 isabela2020.com | Copyright 2019 Efrain J. Valentin Gonzalez | efrainvalentin.github.io */
-
 /* General Styles */
 body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
-html,
-body {
+html, body {
     margin-top: 50px;
     height: 100%;
 }
@@ -37,7 +35,6 @@ a {
 .text-blue {
     color: #004679;
 }
-
 /* Preloader */
 #preloader {
     margin-top: -100px;
@@ -65,7 +62,6 @@ a {
     border-radius: 100%;
     animation: rotation .6s infinite linear;
 }
-
 .spinner:after {
     position: absolute;
     content: url(../images/pava.svg);
@@ -73,20 +69,19 @@ a {
     left: 0px;
     height: 100%;
     width: 100%;
-    animation: rotation .6s infinite linear reverse; /* added this line */
-  }
-
+    animation: rotation .6s infinite linear reverse;
+   /* added this line */
+}
 @keyframes rotation {
-from {
-    transform: rotate(0deg);
-}
-to {
-    transform: rotate(359deg);
-}
+    from {
+        transform: rotate(0deg);
+   }
+    to {
+        transform: rotate(359deg);
+   }
 }
 /* Navbar */
-#navbar-div,
-.navbar {
+#navbar-div, .navbar {
     background-color: #ffffff !important;
     -webkit-transition: padding 0.2s ease;
     -moz-transition: padding 0.2s ease;
@@ -106,41 +101,40 @@ to {
         -webkit-animation-duration: 0.3s;
         animation-fill-mode: both;
         -webkit-animation-fill-mode: both;
-    }
+   }
 }
 @keyframes slideIn {
     0% {
         transform: translateY(1rem);
         opacity: 0;
-    }
+   }
     100% {
         transform: translateY(0rem);
         opacity: 1;
-    }
+   }
     0% {
         transform: translateY(1rem);
         opacity: 0;
-    }
+   }
 }
 @-webkit-keyframes slideIn {
     0% {
         -webkit-transform: transform;
         -webkit-opacity: 0;
-    }
+   }
     100% {
         -webkit-transform: translateY(0);
         -webkit-opacity: 1;
-    }
+   }
     0% {
         -webkit-transform: translateY(1rem);
         -webkit-opacity: 0;
-    }
+   }
 }
 .slideIn {
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
 }
-
 /* News */
 #noticias {
     background-color: #007bac;
@@ -152,12 +146,10 @@ to {
 #noticias marquee {
     vertical-align: sub;
 }
-
 /* Sections */
-section {
+section:not(#quien-soy) {
     min-height: calc(100% - 70px);
 }
-
 /* Header */
 header {
     position: relative;
@@ -206,25 +198,25 @@ header .overlay {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-    }
+   }
     header video {
         display: none;
-    }
+   }
 }
-
 /* Who I am */
-#quien-soy {
+section#quien-soy {
+    max-height: 65vh;
+    height: 100%;
+    width: auto;
     background-image: url(../images/quien-soy.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
-
 img.ricky-info {
     max-width: 250px;
     width: 100%;
     height: auto;
 }
-
 /* Modal Windows */
 #videoModal .modal-dialog {
     max-width: 80%;
@@ -340,7 +332,6 @@ section#redes-sociales {
 .media-flag.youtube:hover:before {
     color: #ff0000;
 }
-
 /* Agenda 2020 */
 iframe#agenda-2020-live {
     max-width: 500px;
@@ -351,7 +342,6 @@ iframe#agenda-2020-live {
 #agenda-2020 hr {
     border-top: none !important;
 }
-
 /* Contact */
 #contacto hr {
     border-top: none !important;
@@ -359,7 +349,6 @@ iframe#agenda-2020-live {
 .info-contact {
     line-height: 2;
 }
-
 /* Footer */
 .footer > p {
     margin: 0 0 20px;
@@ -368,9 +357,7 @@ iframe#agenda-2020-live {
 .footer > p:last-child {
     margin: 0px;
 }
-
-.footer > a:focus,
-.footer > a:hover {
+.footer > a:focus, .footer > a:hover {
     text-decoration: none;
     color: #cbd3da;
 }
@@ -424,7 +411,6 @@ iframe#agenda-2020-live {
 .newsletter-form input:focus::-webkit-input-placeholder {
     color: #fff !important;
 }
-
 .tiny-footer {
     font-size: 14px;
     padding: 14px 0px;
@@ -434,10 +420,9 @@ iframe#agenda-2020-live {
     color: #e6e6e6;
     line-height: 1;
 }
-
 /* Responsive */
 @media only screen and (min-width: 890px) {
-    /* For desktop: */
+   /* For desktop: */
     #agenda-2020 div#divider:before {
         content: url("../images/divider-v.svg");
         display: inline-block;
@@ -447,7 +432,7 @@ iframe#agenda-2020-live {
         right: 0px;
         width: 25px;
         height: 300px;
-    }
+   }
     #contacto div#divider:before {
         content: url(../images/divider-v.svg);
         display: inline-block;
@@ -457,29 +442,29 @@ iframe#agenda-2020-live {
         right: 0px;
         width: 25px;
         height: 300px;
-    }
+   }
     #agenda-2020 hr:before {
         display: none;
         border-top: none !important;
-    }
+   }
     #contacto hr:before {
         display: none;
         border-top: none !important;
-    }
+   }
 }
 @media only screen and (max-width: 767px) {
-    /* For desktop: */
+   /* For desktop: */
     #agenda-2020 hr:before {
         display: block;
         content: url(../images/divider-h.svg);
         width: auto;
         width: 300px;
         height: 25px;
-    }
+   }
     #contacto hr:before {
         display: block;
         content: url(../images/divider-h.svg);
         width: 300px;
         height: 25px;
-    }
+   }
 }
