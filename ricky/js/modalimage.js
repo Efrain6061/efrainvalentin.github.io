@@ -13,14 +13,15 @@ $(document).ready(function() {
 
     // when the modal is opened load image  
     $('#galeriaModal').on('shown.bs.modal', function(e) {
-
+        $("#loader").addClass("d-none");
         $("#image").attr('src', $imageSrc);
     })
 
 
 
     // remove image when close the modal
-    $('#galeriaModal').on('hide.bs.modal', function(e) {
+    $('#galeriaModal').on('hidden.bs.modal', function(e) {
+        $("#loader").removeClass("d-none");
         $("#image").attr('src', "");
     })
 

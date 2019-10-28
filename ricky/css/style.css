@@ -20,6 +20,24 @@ a {
 .bg-blue {
     background-color: #2c368d !important;
 }
+.btn-ath {
+    height: 55px !important;
+    background-color: #f57c00;
+    color: #fff;
+}
+.btn-ath:hover, .btn-ath:focus {
+    background-color: #f59c00;
+    color: #fff;
+}
+.btn-paypal {
+    height: 55px !important;
+    background-color: #019cde;
+    color: #fff;
+}
+.btn-paypal:hover, .btn-paypal:focus {
+    background-color: #019ffd;
+    color: #fff;
+}
 .bg-red-accent {
     background-color: #d61920 !important;
 }
@@ -146,10 +164,6 @@ a {
 #noticias marquee {
     vertical-align: sub;
 }
-/* Sections */
-section:not(#quien-soy):not(#estatus-electoral) {
-    min-height: calc(100% - 70px);
-}
 /* Header */
 header {
     position: relative;
@@ -205,8 +219,6 @@ header .overlay {
 }
 /* Who I am */
 section#quien-soy {
-    max-height: 65vh;
-    height: 100%;
     width: auto;
     background-image: url(../images/quien-soy.jpg);
     background-size: cover;
@@ -275,16 +287,16 @@ img.ricky-info {
     color: #fff;
     opacity: 1;
 }
-#galeriaModal .modal-dialog {
+#galeriaModal .modal-dialog, #athModal .modal-dialog, #paypalModal .modal-dialog {
     max-width: 80%;
     width: 100%;
     margin: 30px auto;
 }
-#galeriaModal .modal-body {
+#galeriaModal .modal-body, #athModal .modal-body, #paypalModal .modal-body {
     position: relative;
     padding: 0px;
 }
-#galeriaModal .close {
+#galeriaModal .close, #athModal .close, #paypalModal .close {
     position: absolute;
     right: -30px;
     top: 0;
@@ -296,6 +308,18 @@ img.ricky-info {
 }
 .galeria-a {
     cursor: pointer;
+}
+#loader {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    z-index: 2;
+    bottom: 0;
+}
+#loader-in {
+    height: 150px !important;
+    align-items: center;
 }
 /* Social Networks */
 section#redes-sociales {

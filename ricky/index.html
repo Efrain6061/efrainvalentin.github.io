@@ -5,7 +5,7 @@ Template: Ricky Méndez v1.0.1
 Copyright 2019 Efrain J. Valentin Gonzalez
 -->
 <!DOCTYPE html>
-<html lang="es-pr">
+<html lang="es_US">
 
 <head>
     <meta charset="UTF-8">
@@ -19,20 +19,13 @@ Copyright 2019 Efrain J. Valentin Gonzalez
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#f30304">
+    <meta name="msapplication-TileColor" content="#f30304">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Metadata -->
     <meta name="msapplication-TileColor" content="#f30304">
@@ -55,7 +48,7 @@ Copyright 2019 Efrain J. Valentin Gonzalez
     <meta name="twitter:image:alt" content="Logo de Miguel Ricky Méndez 2020">
 
     <!-- Open Graph data -->
-    <meta property="og:locale" content="es_PR" />
+    <meta property="og:locale" content="es_US" />
     <meta property="og:title" content="Miguel Ricky Méndez 2020" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://isabela2020.com/" />
@@ -78,7 +71,7 @@ Copyright 2019 Efrain J. Valentin Gonzalez
 <body>
     <!-- Preloader -->
     <div id="preloader">
-        <img src="images/nav.png" alt="" />
+        <img src="images/nav.png" alt="Logo" />
         <br>
         <div class="text-center my-2">
             <div class="spinner">
@@ -90,26 +83,26 @@ Copyright 2019 Efrain J. Valentin Gonzalez
     <!-- Navbar -->
     <div class="fixed-top bg-light" id="navbar-div" data-toggle="affix">
         <nav class="navbar navbar-expand-lg navbar-light border-bottom shadow-sm" id="menu">
-            <a data-scroll class="navbar-brand" href="#inicio"><img class="py-2" src="images/nav.png" width="125px" height="auto" alt=""></a>
+            <a class="navbar-brand js-scroll-trigger" href="#inicio"><img class="py-2" src="images/nav.png" width="125px" height="auto" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a data-scroll class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link js-scroll-trigger" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#quien-soy">&iquest;Qui&eacute;n Soy?</a>
+                        <a class="nav-link js-scroll-trigger" href="#quien-soy">&iquest;Qui&eacute;n Soy?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#redes-sociales">Redes Sociales</a>
+                        <a class="nav-link js-scroll-trigger" href="#redes-sociales">Redes Sociales</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#agenda-2020">#Agenda2020</a>
+                        <a class="nav-link js-scroll-trigger" href="#agenda-2020">#Agenda2020</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#estatus-electoral">Estatus Electoral</a>
+                        <a class="nav-link js-scroll-trigger" href="#estatus-electoral">Estatus Electoral</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
@@ -118,14 +111,14 @@ Copyright 2019 Efrain J. Valentin Gonzalez
                         #&Uacute;neteporIsabela
                     </a>
                         <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#unete">Voluntario</a>
+                            <a class="dropdown-item js-scroll-trigger" data-toggle="modal" data-target="#galeriaModal" href="#">Voluntario</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto" data-toggle="modal" data-target="#contactForm">Contacto</a>
+                        <a class="nav-link js-scroll-trigger" href="#contacto" data-toggle="modal" data-target="#contactForm">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="mx-3 px-3 btn bg-red text-white" href="#contacto">Donar</a>
+                        <a class="js-scroll-trigger mx-3 px-3 btn bg-red text-white" href="#contacto">Donar</a>
                     </li>
                 </ul>
             </div>
@@ -400,8 +393,15 @@ Copyright 2019 Efrain J. Valentin Gonzalez
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div id="loader">
+                        <div id="loader-in" class="d-flex justify-content-center w-100">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
                     <img class="img-fluid" src="" alt="thumbnail" id="image">
                 </div>
             </div>
@@ -457,8 +457,9 @@ Copyright 2019 Efrain J. Valentin Gonzalez
         <h2 class="font-weight-light text-center">Contacto</h2>
         <div class="container">
             <div class="row my-5">
-                <div class="col-md-6 my-3" id="divider">
-                    <p class="info-contact mx-auto text-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;(787) 223-9947<br>
+                <div class="col-md-6 text-center my-3" id="divider">
+                        <img class="my-3" src="images/contact.svg" alt="Contact Icon" width="100px" height="auto">
+                    <p class="info-contact w-50 mx-auto text-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;(787) 223-9947<br>
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;rickymendez2020@gmail.com<br>
                         <i class="fa fa-globe" aria-hidden="true"></i>&nbsp;www.isabela2020.com<br>
                         <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;PO BOX 1667<br>Isabela, Puerto Rico 00662</p>
@@ -471,11 +472,43 @@ Copyright 2019 Efrain J. Valentin Gonzalez
                         <BR> COOPERATIVA DE AHORRO Y CR&Eacute;DITO DE ISABELA
                         <BR>
                         <strong>CUENTA: 0101-066402-4</strong></p>
+                        <a class="btn btn-lg btn-ath mx-2" href="#" data-toggle="modal" data-target="#athModal"><img src="images/ath-movil.svg" width="150px" height="auto" alt=""></a>
+                    <a class="btn btn-lg btn-paypal mx-2" href="#" data-toggle="modal" data-target="#paypalModal"><img src="images/ppcom-white.svg" width="150px" height="auto" alt=""></a>
                 </div>
             </div>
         </div>
     </section>
     <!-- /. Contacto -->
+
+    <!-- ATH movil Modal -->
+    <div class="modal fade" id="athModal" tabindex="-1" role="dialog" aria-labelledby="athModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    <img class="img-fluid" src="images/ath-movil.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. ATH movil Modal -->
+
+    <!-- Paypal Modal -->
+    <div class="modal fade" id="paypalModal" tabindex="-1" role="dialog" aria-labelledby="paypalModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    <img class="img-fluid" src="images/paypal.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /. Paypal Modal -->
 
     <!-- Contacto Modal -->
     <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contactFormTitle" aria-hidden="true">
@@ -527,9 +560,9 @@ Copyright 2019 Efrain J. Valentin Gonzalez
                     <div class="footer-widget ">
                         <div class="footer-title">Enlaces</div>
                         <ul class="list-unstyled">
-                            <li><a data-scroll href="#inicio">Inicio</a></li>
-                            <li><a href="#quien-soy">&iquest;Qui&eacute;n Soy?</a></li>
-                            <li><a href="#agenda-2020">#Agenda2020</a></li>
+                            <li><a class="js-scroll-trigger" href="#inicio">Inicio</a></li>
+                            <li><a class="js-scroll-trigger" href="#quien-soy">&iquest;Qui&eacute;n Soy?</a></li>
+                            <li><a class="js-scroll-trigger" href="#agenda-2020">#Agenda2020</a></li>
                             <li><a href="donar.html">Donar</a></li>
                         </ul>
                     </div>
@@ -543,7 +576,7 @@ Copyright 2019 Efrain J. Valentin Gonzalez
                             <li><a href="http://www.ceepur.org/">Comisi&oacute;n Estatal de Elecciones</a></li>
                             <li><a href="http://ww2.ceepur.org/es-pr/Paginas/Estatus-del-Elector.aspx">Estatus del Elector</a></li>
                             <li><a href="https://www.ppdpr.net/">PPD PR</a></li>
-                            <li><a href="#contacto" data-toggle="modal" data-target="#contactForm">Contacto</a></li>
+                            <li><a class="js-scroll-trigger" href="#contacto" data-toggle="modal" data-target="#contactForm">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -594,17 +627,15 @@ Copyright 2019 Efrain J. Valentin Gonzalez
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
     <script src="js/preloader.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/modalvideo.js"></script>
     <script src="js/modalimage.js"></script>
     <script src="js/youtube.js"></script>
 
-    <!-- Script for SmoothScroll -->
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
+    
 
     <script> 
 
