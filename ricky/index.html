@@ -472,8 +472,11 @@ Copyright 2019 Efrain J. Valentin Gonzalez
                         <BR> COOPERATIVA DE AHORRO Y CR&Eacute;DITO DE ISABELA
                         <BR>
                         <strong>CUENTA: 0101-066402-4</strong></p>
-                        <a class="btn btn-lg btn-ath mx-2" href="#" data-toggle="modal" data-target="#athModal"><img src="images/ath-movil.svg" width="150px" height="auto" alt=""></a>
-                    <a class="btn btn-lg btn-paypal mx-2" href="#" data-toggle="modal" data-target="#paypalModal"><img src="images/ppcom-white.svg" width="150px" height="auto" alt=""></a>
+                        <button onclick='FB.AppEvents.logEvent("buttonClicked")'>
+                            Click me
+                          </button>
+                        <a class="btn btn-lg btn-ath mx-2 my-2" href="#" data-toggle="modal" data-target="#athModal"><img src="images/ath-movil.svg" width="150px" height="auto" alt=""></a>
+                    <a class="btn btn-lg btn-paypal mx-2 my-2" href="#" data-toggle="modal" data-target="#paypalModal"><img src="images/ppcom-white.svg" width="150px" height="auto" alt=""></a>
                 </div>
             </div>
         </div>
@@ -704,6 +707,12 @@ Copyright 2019 Efrain J. Valentin Gonzalez
         js.src = "https://connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>
+    $(document).on("load", function() {
+        FB.AppEvents.logPageView();
+    })
     </script>
 
 </body>
